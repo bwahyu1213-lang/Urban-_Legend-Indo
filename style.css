@@ -174,11 +174,16 @@ body {
 .time-box {
   position: absolute;
   top: 20px;
-  right: 30px;
-  font-size: 14px;
-  color: rgba(255,255,255,0.85);
-  letter-spacing: 0.5px;
+  right: 20px;
+  z-index: 99;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 15px;
+  border-radius: 5px;
   font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .menu-open #sideMenu {
@@ -284,7 +289,12 @@ body {
 
 .contact-page main {
   position: relative;
-  top: -150px;
+  top: 0;
+}
+
+.contact-page .hero {
+  padding-top: 100px;
+  padding-bottom: 20px;
 }
 
 .legend-image {
