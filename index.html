@@ -84,5 +84,42 @@
       <p>NIM: 251011701236 | Kelas: 01SIFP014</p>
     </div>
   </footer>
+  <button onclick="openHack()" style="
+background:black;
+color:#00ff00;
+border:2px solid #00ff00;
+padding:12px;
+font-family:monospace;
+">
+HACK SYSTEM
+</button>
+
+<div id="hack" style="display:none;
+position:fixed;
+top:0;left:0;
+width:100%;
+height:100%;
+background:black;
+color:lime;
+padding:20px;
+font-family:monospace;
+z-index:9999;">
+<h2>ACCESSING SERVER...</h2>
+<p>Bypassing Firewall...</p>
+<p>Injecting Payload...</p>
+<p>Access Granted.</p>
+<button onclick="closeHack()">EXIT</button>
+</div>
+
+<script>
+function openHack() {
+  document.getElementById("hack").style.display="block";
+}
+function closeHack() {
+  document.getElementById("hack").style.display="none";
+}
+</script>
+  
 </body>
 </html>
+
